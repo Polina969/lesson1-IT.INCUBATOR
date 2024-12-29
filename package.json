@@ -1,0 +1,22 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon --inspect dist/index.js",
+    "jest": "jest -i",
+    "jest:coverage": "jest -i --coverage"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
