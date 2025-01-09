@@ -14,7 +14,8 @@ export const app = express(); // создать приложение
 app.use(express.json()); // создание свойств-объектов body и query во всех реквестах
 app.use(cors()); // разрешить любым фронтам делать запросы на наш бэк
 
-app.delete("/hometask_01/api/testing/all-data", (req, res) => {
+const baseURL = "/hometask_01/api/videos";
+app.delete("${baseURL}/testing/all-data", (req, res) => {
   db.videos = [];
   res.sendStatus(204);
 });
